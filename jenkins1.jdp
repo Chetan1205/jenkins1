@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build'){
             steps {
-                 sh '/opt/maven/bin/mvn '
+                 sh '/opt/maven/bin/mvn'
             }
         }
         stage('Test'){
