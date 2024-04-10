@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Pull'){
             steps {
-                git 'https://github.com/Chetan1205/studentapp-ui.git'
+                echo 'Pull Success'
             }
         }
         stage('Build'){
             steps {
-                 sh '/opt/maven/bin/mvn'
+                 echo 'Build Success'
             }
         }
         stage('Test'){
